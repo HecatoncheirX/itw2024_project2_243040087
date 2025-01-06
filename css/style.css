@@ -13,7 +13,7 @@ body {
 
 .background:after {
     content: "";
-    background: url('/img/logo.png  ');
+    background: url('/img/logo.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 70%;
@@ -98,6 +98,10 @@ header p {
     color: #ff0099;
     font-family: "Permanent Marker", serif;
 }
+
+.fw-bold {
+    color: #ff0099;
+}
 .p-about a {
     color: white;
 }
@@ -105,6 +109,9 @@ header p {
     color: #ff0099;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+.fs-4 {
+    color: #ff0099;
 }
 p .fs-4 {
     color: #ff0099;
@@ -183,38 +190,97 @@ p .fs-4 {
   }
   
 /* Contact Section */
-form input,
-form textarea {
-    background-color: #1c1c1c;
-    color: #ffffff;
-    border: 1px solid #b3b3b3;
-}
-form input:focus,
-form textarea:focus {
-    border-color: #e50914;
-    box-shadow: 0 0 5px rgba(229, 9, 20, 0.8);
-}
-form button {
-    background-color: #e50914;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-form button:hover {
-    background-color: #b00611;
-}
+.contact-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
 
+  .contact-left {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+  }
+
+  .contact-left h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact-left p {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .contact-icons a:hover {
+    color: #ff0099;
+  }
+
+  .contact-right {
+    padding: 2rem;
+    background-color: black;
+  }
+
+  .contact-right form input,
+  .contact-right form textarea {
+    background-color: white;
+    border: 2px solid #ff0099;
+    border-radius: 10px;
+    padding: 0.75rem;
+  }
+
+  .contact-right form button {
+    background-color: #ff0099;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-right form button:hover {
+    background-color: #ff0099;
+  }
 /* Footer */
 footer {
-    background-color: #1c1c1c;
-    color: #b3b3b3;
-}
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
+    background-color: #000; /* Warna hitam */
+    color: #fff; /* Warna teks putih */
+    padding: 2rem 0;
+    text-align: center;
+  }
 
+  footer .footer-links a {
+    color: #fff; /* Warna putih untuk link */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  footer .footer-links a:hover {
+    color: #ff0099; /* Warna hijau saat hover */
+  }
+
+  footer .copyright {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  footer .copyright a {
+    color: #00d1b2; /* Warna hijau untuk link */
+    text-decoration: none;
+  }
+
+  footer .copyright a:hover {
+    color: #fff; /* Warna putih saat hover */
+  }
 /* Responsiveness */
 @media (max-width: 768px) {
     header h1 {
