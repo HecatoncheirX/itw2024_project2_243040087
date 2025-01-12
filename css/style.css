@@ -188,9 +188,13 @@ p .fs-4 {
     font-size: 14px;
     margin: 0;
   }
-  
-/* Contact Section */
-.contact-container {
+
+  /* Gallery Section */
+  .custom-border {
+    border: 5px solid #ff0099;
+  }
+  /* Contact Section */
+  .contact-container {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
